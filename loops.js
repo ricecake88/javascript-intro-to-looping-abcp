@@ -1,9 +1,23 @@
-function forLoop(myArray) {
+/*function forLoop(myArray) {
+  myArray = [];
   for (var i = 0; i < 25; i++)
   {
-    myArray[i] = `"I am ${i+1} strange loop${i === 0 ? '':'s'}."`;
+    myArray.push(`I am ${i+1} strange loop${i === 0 ? '':'s'}.`);
   }
   return myArray;
+}*/
+
+function forLoop(array){
+	array = [];
+  for (var i = 0; i<25; i++){
+    if(i===1){
+      array.push('I am 1 strange loop.')
+    }
+    else{
+      array.push(`I am ${i} loops.`)
+    }
+  }
+  return array
 }
 
 function whileLoop(number) {
@@ -22,7 +36,6 @@ function doWhileLoop(myArray) {
     myArray.pop();
   } while (maybeTrue() && (myArray.length > 0));
   
-  console.log("In doWhileLoop " + myArray);
   return myArray;
 }
 
