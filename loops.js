@@ -18,7 +18,6 @@ function maybeTrue() {
 }
 
 function doWhileLoop(myArray) {
-  console.log(maybeTrue());
   do {
     myArray.pop();
   } while (maybeTrue() && (myArray.length > 0));
