@@ -3,7 +3,6 @@ function forLoop(myArray) {
   {
     myArray[i] = `"I am ${i+1} strange loop${i === 0 ? '':'s'}."`;
   }
-  console.log(myArray);
   return myArray;
 }
 
