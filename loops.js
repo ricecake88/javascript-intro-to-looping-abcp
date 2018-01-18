@@ -4,6 +4,7 @@ function forLoop(myArray) {
   {
     myArray.push(`I am ${i+1} strange loop${i === (0+myArray.length) ? '':'s'}.`);
   }
+  console.log(myArray);
   return myArray;
 }
 
